@@ -1,8 +1,8 @@
 Website Name: "CREATIVE IT ACADEMY"
 
-Live Link:
+Live Link: https://a-assignment-11.web.app/
 
-Github Code Link:
+Github Code Link:https://github.com/Porgramming-Hero-web-course/complete-website-client-mrahman96
 
 Features: 
             1. Clear Navigation,
