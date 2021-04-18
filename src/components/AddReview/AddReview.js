@@ -1,10 +1,10 @@
 import axios from 'axios';
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
 
-const AddReview = () => { 
+const AddReview = () => {
 
     const { register, handleSubmit } = useForm();
     const [imageURL, setImageURL] = useState(null)
@@ -48,17 +48,17 @@ const AddReview = () => {
             <h1 className="m-5 text-center">Add Your Valuable Review Here</h1>
             <form className="m-5 text-center" onSubmit={handleSubmit(onSubmit)}>
 
-            <p>Name: <input type="text" ref={"name"} name="name" defaultValue="Name" ref={register} /></p>
-                
+                <p>Name: <input type="text" ref={"name"} name="name" defaultValue="Name" ref={register} /></p>
+
                 <p>Review: <input ref={"review"} name="review" defaultValue="review" ref={register} /> </p><b></b>
 
                 <input name="exampleRequired" type="file" onChange={handleImageUpload} />
                 <br />
-                <input type="submit"/>             
+                <input type="submit" />
             </form>
-            <br/>
-            <br/> 
-            <Footer></Footer>           
+            <br />
+            <br />
+            <Footer></Footer>
         </div>
     );
 };
