@@ -39,10 +39,11 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                        <Link to="/Order" className="text-white">
-                            <FontAwesomeIcon icon={faFileAlt} /> <span>Order List</span>
+                        <Link to="/IndividualOrder" className="text-white">
+                            <FontAwesomeIcon icon={faFileAlt} /> <span>Customer Order List</span>
                         </Link>
                     </li>
+               
 
 
                 {isAdmin && <div>
@@ -61,7 +62,11 @@ const Sidebar = () => {
                             <FontAwesomeIcon icon={faFileAlt} /> <span>Add A Service</span>
                         </Link>
                     </li>
-                    
+                    <li>
+                        <Link to="/Order" className="text-white">
+                            <FontAwesomeIcon icon={faFileAlt} /> <span>Order List</span>
+                        </Link>
+                    </li>                  
 
 
                 </div>}

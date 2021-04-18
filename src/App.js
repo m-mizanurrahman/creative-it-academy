@@ -11,6 +11,7 @@ import AddReview from "./components/AddReview/AddReview";
 import Buy from "./components/Buy/Buy";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import Home from "./components/Home/Home/Home";
+import IndividualOrder from "./components/IndividualOrder/IndividualOrder";
 import Login from "./components/Login/Login";
 import Manage from "./components/Manage/Manage";
 import Order from "./components/Order/Order";
@@ -25,27 +26,7 @@ export default function BasicExample() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <p> {loggedInUser.name}</p>
       <Router>
-        <div>
-          {/* <ul class="navbar-nav">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/addEvent">Admin</Link>
-            </li>
-            <li>
-              <Link to="/addReview">Add a Review</Link>
-            </li>
-            <li>
-              <Link to="/Order">Order</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-          </ul> */}
-          
-          
-
+        <div> 
           <hr />
           <Switch>
             <Route exact path="/">
@@ -59,6 +40,9 @@ export default function BasicExample() {
             </PrivateRoute>
             <PrivateRoute path="/Order">
               <Order />
+            </PrivateRoute>
+            <PrivateRoute path="/IndividualOrder">
+              <IndividualOrder />
             </PrivateRoute>
             <PrivateRoute path="/manage">
               <Manage />

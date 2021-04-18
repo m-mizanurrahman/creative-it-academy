@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
-import Review from '../Review/Review';
+import IndividualOrderReview from '../IndividualOrderReview/IndividualOrderReview';
 
-const Home = () => {
+const IndividualOrder = () => {
 
     const [events, setEvents] = useState([])
 
@@ -16,13 +16,13 @@ const Home = () => {
     return (
         <div className="row">
             <Navbar></Navbar>
-            <h1>Total Order List</h1>
+            <h1>Customer Order List</h1>
             {
-                events.map(event => <Review key={event.name} event={event}></Review>)
+                events.map(event => <IndividualOrderReview key={event.name} event={event}></IndividualOrderReview>)
             }
             <Footer></Footer>
         </div>
     );
 };
 
-export default Home;
+export default IndividualOrder;

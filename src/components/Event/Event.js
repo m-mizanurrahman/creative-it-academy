@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Event/Event'
+import './Event.css'
 
 
 const Event = (props) => {
@@ -17,7 +18,7 @@ const Event = (props) => {
                 height: '300px'
 
             }}
-                className="item ">
+                className="item service">
                 <img style={{ width: '200px', height: '100px' }} src={imageURL} alt="pic" />
                 <h3>Name: {name} <br />
                     <h3>Price: $ {price}</h3>
