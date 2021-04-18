@@ -7,7 +7,7 @@ const Manage = () => {
     const [events, setEvents] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5055/events')
+        fetch('https://powerful-lowlands-88233.herokuapp.com/events')
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])

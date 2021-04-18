@@ -15,7 +15,7 @@ const AddReview = () => {
             imageURL: imageURL,
             review: data.review
         }
-        const url = `http://localhost:5055/addReview`
+        const url = `https://powerful-lowlands-88233.herokuapp.com/addReview`
 
         fetch(url, {
             method: 'POST',

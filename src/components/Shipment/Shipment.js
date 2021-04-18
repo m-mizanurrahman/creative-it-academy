@@ -24,7 +24,7 @@ const Shipment = () => {
       orderTime: new Date()
     };
 
-    fetch('http://localhost:5055/addOrder', {
+    fetch('https://powerful-lowlands-88233.herokuapp.com/addOrder', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

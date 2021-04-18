@@ -8,7 +8,7 @@ const Home = () => {
     const [events, setEvents] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5055/orders')
+        fetch('https://powerful-lowlands-88233.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])

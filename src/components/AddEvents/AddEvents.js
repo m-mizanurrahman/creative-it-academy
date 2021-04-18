@@ -16,7 +16,7 @@ const AddEvents = () => {
             price: data.price,
             weight: data.weight
         }
-        const url = `http://localhost:5055/addEvent`
+        const url = `https://powerful-lowlands-88233.herokuapp.com/addEvent`
 
         fetch(url, {
             method: 'POST',

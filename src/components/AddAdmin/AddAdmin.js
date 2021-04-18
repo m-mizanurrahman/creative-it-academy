@@ -22,7 +22,7 @@ const AddDoctor = () => {
         formData.append('name', info.name);
         formData.append('email', info.email);
 
-        fetch(`http://localhost:5055/addAAdmin`, {
+        fetch(`https://powerful-lowlands-88233.herokuapp.com/addAAdmin`, {
             method: 'POST',
             body: formData
         })

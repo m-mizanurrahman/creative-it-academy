@@ -8,7 +8,7 @@ const Buy = () => {
     const [event, setEvent] = useState({})
 
     useEffect(() => {
-        fetch('http://localhost:5055/event/' + eventKey)
+        fetch('https://powerful-lowlands-88233.herokuapp.com/event/' + eventKey)
             .then(res => res.json())
             .then(data => setEvent(data))
     }, [eventKey])
