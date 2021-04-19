@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faCalendar, faHome, faGripHorizontal, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faHome, faGripHorizontal, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faFileAlt } from '@fortawesome/free-regular-svg-icons'
 import { UserContext } from '../../../App';
 
@@ -39,13 +39,10 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                        <Link to="/IndividualOrder" className="text-white">
-                            <FontAwesomeIcon icon={faFileAlt} /> <span>Customer Order List</span>
-                        </Link>
-                    </li>
-               
-
-
+                    <Link to="/IndividualOrder" className="text-white">
+                        <FontAwesomeIcon icon={faFileAlt} /> <span>Customer Order List</span>
+                    </Link>
+                </li>
                 {isAdmin && <div>
                     <li>
                         <Link to="/manage" className="text-white">
@@ -66,12 +63,9 @@ const Sidebar = () => {
                         <Link to="/Order" className="text-white">
                             <FontAwesomeIcon icon={faFileAlt} /> <span>Order List</span>
                         </Link>
-                    </li>                  
-
-
+                    </li>
                 </div>}
             </ul>
-
         </div>
     );
 };

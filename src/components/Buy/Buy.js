@@ -4,7 +4,7 @@ import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
 
 const Buy = () => {
-    const {eventKey} = useParams()
+    const { eventKey } = useParams()
     const [event, setEvent] = useState({})
 
     useEffect(() => {
@@ -16,11 +16,13 @@ const Buy = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1>Check Out</h1>
-            <h1>{event.name}</h1>
-            <h5>Price: $ {event.price} </h5>
-            <img src={event.imageURL} alt=""/><br/>
-            <h1><Link to="/shipment"><button>Check Out</button> </Link></h1>
+            <div style={{margin: '10%', backgroundColor: 'gray', textAlign: 'center', padding: '5%'}}>
+                <h1>Check Out Your Service</h1>
+                <img style={{width: '80%'}} src={event.imageURL} alt="" /><br />
+                <h1>Service Name: {event.name}</h1>
+                <h5>Price: $ {event.price} </h5>
+                <h1><Link to="/shipment"><button>Check Out</button> </Link></h1>
+            </div>
             <Footer></Footer>
         </div>
     );

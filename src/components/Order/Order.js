@@ -3,7 +3,7 @@ import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
 import Review from '../Review/Review';
 
-const Home = () => {
+const Order = () => {
 
     const [events, setEvents] = useState([])
 
@@ -16,13 +16,15 @@ const Home = () => {
     return (
         <div className="row">
             <Navbar></Navbar>
-            <h1>Total Order List</h1>
-            {
-                events.map(event => <Review key={event.name} event={event}></Review>)
-            }
+            <div className="text-center m-5">
+                <h1>Total Order List</h1>
+                {
+                    events.map(event => <Review key={event.name} event={event}></Review>)
+                }
+            </div>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Home;
+export default Order;

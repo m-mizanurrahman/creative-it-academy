@@ -25,40 +25,31 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="row "><br/>
-
-        <Header></Header> 
-        <Carousel></Carousel>
+        <div className="row "><br />
+            <Header></Header>
+            <Carousel></Carousel>
             <div>
                 <div style={{ marginTop: '200px', textAlign: 'center' }}>
-                <p >Services</p>
-                <h1 >Available Services We Provide</h1>
+                    <p >Services</p>
+                    <h1 >Available Services We Provide</h1>
                 </div>
-                
                 {
                     events.map(event => <Event key={event.name} event={event}></Event>)
                 }
-            </div><br/>
-            
-            
+            </div><br />
             <div>
-            <div style={{ marginTop: '200px', textAlign: 'center' }}>
-                <p >Reviews</p>
-                <h1 > What Clients Say About Us</h1>
+                <div style={{ marginTop: '200px', textAlign: 'center' }}>
+                    <p >Reviews</p>
+                    <h1 > What Clients Say About Us</h1>
                 </div>
-                
                 {
                     reviews.map(review => <Testimonial key={review.name} review={review}></Testimonial>)
                 }
-            </div><br/>
-
+            </div><br />
             <div>
-            <Contact></Contact>
-
+                <Contact></Contact>
                 <Footer></Footer>
             </div>
-
-
         </div>
     );
 };

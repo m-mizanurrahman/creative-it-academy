@@ -38,7 +38,7 @@ const Shipment = () => {
         }
       })
   }
-  
+
   console.log(watch("example"));
 
   return (
@@ -61,10 +61,13 @@ const Shipment = () => {
           <input type="submit" />
         </form>
       </div>
-      <div style={{ display: shippingData ? 'block' : 'none' }} className="col-md-6">
-        <h2>Please Pay for me</h2>
-        <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
+      <div style={{  margin: '10%', padding: '5%' }}>
+        <div style={{ display: shippingData ? 'block' : 'none' }} className="col-md-6">
+          <h2>Please Pay for me</h2>
+          <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
+        </div>
       </div>
+
       <Footer></Footer>
     </div>
   );

@@ -15,8 +15,7 @@ const Remove = ({ event }) => {
         <div style={{
             width: '200px',
             float: 'left',
-            border: '1px solid black',
-            margin: '5px',
+            margin: '5%',
             padding: '2px',
             height: '200px'
         }}

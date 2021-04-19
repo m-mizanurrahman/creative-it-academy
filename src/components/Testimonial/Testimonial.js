@@ -1,20 +1,16 @@
 import React from 'react';
-import '../Event/Event'
 
 const Testimonial = (props) => {
     const { _id, name, imageURL, price, weight, review } = props.review;
 
     return (
         <main style={{ margin: '100px', textAlign: 'center' }}>
-
-
             <div style={{
                 width: '350px',
                 float: 'left',
-                border: '1px solid black',
                 margin: '15px',
                 padding: '20px',
-                height: '300px'
+                height: '200px'
 
             }}
                 className="item ">

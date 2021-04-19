@@ -36,12 +36,10 @@ const Login = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div style={{textAlign:'center', border: '1px solid', height:'100px', marginLeft: '200px', padding: '80px', width: '1000px'}}>
+            <div style={{textAlign:'center', height:'100px', marginLeft: '200px', padding: '80px', width: '1000px'}}>
             <button  onClick={handleGoogleSinIn}>Sign In Using Google</button>
-
             </div>
             <Footer></Footer>
-
         </div>
     );
 };

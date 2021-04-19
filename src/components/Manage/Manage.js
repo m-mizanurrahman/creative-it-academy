@@ -15,12 +15,15 @@ const Manage = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1>Manage Your Business</h1>
-            <div className="row my-5 mx-5">
-                {
-                    events.map(event => <Remove event={event}></Remove>)
-                }
+            <div className="m-5 text-center text-primary">
+                <h1>Manage Your Business</h1>
+                <div className="row my-5 mx-5">
+                    {
+                        events.map(event => <Remove event={event}></Remove>)
+                    }
+                </div>
             </div>
+
             <Footer></Footer>
         </div>
     );

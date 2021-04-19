@@ -24,10 +24,8 @@ export default function BasicExample() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <p> {loggedInUser.name}</p>
-      <Router>
-        <div> 
-          <hr />
+      <p style={{textAlign: 'right'}}> {loggedInUser.name}</p>
+      <Router>                   
           <Switch>
             <Route exact path="/">
               <Home />
@@ -61,10 +59,8 @@ export default function BasicExample() {
             </Route>
             <PrivateRoute path="/addAdmin">
               <AddAdmin />
-            </PrivateRoute>
-            
-          </Switch>
-        </div>
+            </PrivateRoute>            
+          </Switch>        
       </Router>
     </UserContext.Provider>
   );

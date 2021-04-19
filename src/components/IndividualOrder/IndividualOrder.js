@@ -16,10 +16,13 @@ const IndividualOrder = () => {
     return (
         <div className="row">
             <Navbar></Navbar>
-            <h1>Customer Order List</h1>
-            {
-                events.map(event => <IndividualOrderReview key={event.name} event={event}></IndividualOrderReview>)
-            }
+            <div className="text-center m-5">
+                <h1>Customer Order List</h1>
+                {
+                    events.map(event => <IndividualOrderReview key={event.name} event={event}></IndividualOrderReview>)
+                }
+            </div>
+
             <Footer></Footer>
         </div>
     );

@@ -47,11 +47,8 @@ const AddReview = () => {
             <Navbar></Navbar>
             <h1 className="m-5 text-center">Add Your Valuable Review Here</h1>
             <form className="m-5 text-center" onSubmit={handleSubmit(onSubmit)}>
-
                 <p>Name: <input type="text" ref={"name"} name="name" defaultValue="Name" ref={register} /></p>
-
                 <p>Review: <input ref={"review"} name="review" defaultValue="review" ref={register} /> </p><b></b>
-
                 <input name="exampleRequired" type="file" onChange={handleImageUpload} />
                 <br />
                 <input type="submit" />

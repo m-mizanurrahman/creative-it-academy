@@ -9,7 +9,8 @@ const stripePromise = loadStripe('pk_test_51IeFliLuAR4seXwioO61E70PaP8PBWLR3Ud0G
 
 const ProcessPayment = ({handlePayment}) => {
     return (
-        <Elements stripe={stripePromise}>
+        
+        <Elements style={{ margin: '10%'}} stripe={stripePromise}>
             <SimpleCardForm handlePayment={handlePayment}></SimpleCardForm>
         </Elements>
     );

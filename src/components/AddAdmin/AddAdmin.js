@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from '../Dashboard/Sidebar/Sidebar';
 
-const AddDoctor = () => {
+const AddAdmin = () => {
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
     const handleBlur = e => {
@@ -60,4 +60,4 @@ const AddDoctor = () => {
     );
 };
 
-export default AddDoctor;
+export default AddAdmin;

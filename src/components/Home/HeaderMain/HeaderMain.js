@@ -8,7 +8,6 @@ const HeaderMain = () => {
                 <h1 style={{color: '#3A4256'}}>Go To The <br/> Next Level</h1>
                 <p className="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eius nobis, natus labore ipsum maxime?</p>
                 <button className="btn btn-primary">Hire Us</button>
-
             </div>
             <div className="col-md-6">
                 <img src={headerPic} alt="" className="img-fluid"/>
