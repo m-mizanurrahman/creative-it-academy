@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Event/Event'
-const Event = (props) => {
+
+const Review = (props) => {
     const { name, price, weight, email, orderTime } = props.event
     return (
         <div className="m-2">            
@@ -20,4 +20,4 @@ const Event = (props) => {
     );
 };
 
-export default Event;
+export default Review;

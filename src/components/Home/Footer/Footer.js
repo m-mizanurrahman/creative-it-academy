@@ -58,8 +58,7 @@ const Footer = () => {
                     <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
                 </div>
             </div>
-        </footer>
-        
+        </footer>        
     );
 };
 
