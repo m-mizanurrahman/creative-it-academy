@@ -15,7 +15,7 @@ const Review = (props) => {
             imageURL: imageURL,
             review: data.review
         }
-        const url = `http://localhost:5055/addStatus`
+        const url = `https://powerful-lowlands-88233.herokuapp.com/addStatus`
 
         fetch(url, {
             method: 'POST',
