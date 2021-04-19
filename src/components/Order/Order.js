@@ -16,7 +16,7 @@ const Order = () => {
     return (
         <div className="row">
             <Navbar></Navbar>
-            <div className="text-center m-5">
+            <div className="m-5">
                 <h1>Total Order List</h1>
                 {
                     events.map(event => <Review key={event.name} event={event}></Review>)

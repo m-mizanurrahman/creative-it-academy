@@ -6,8 +6,8 @@ const IndividualOrderReview = (props) => {
     
     return (
         <div className="m-5">            
-            <form action="/action_page.php">
-                <li>Name: {name},  Email:{email}, OrderTime: {orderTime}                       
+            <form>
+                <li>Name: {name},  Email:{email}, OrderTime: {orderTime} <br/> Status: Ongoing                      
                 </li>
             </form>
         </div>
