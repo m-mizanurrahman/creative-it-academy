@@ -1,6 +1,6 @@
 WEBSITE NAME: "CREATIVE IT ACADEMY"
 
-CLIENT SIDE LIVE LINK: https://a-assignment-11.web.app/
+LIVE LINK: https://a-assignment-11.web.app/
 
 SERVER SIDE LIVE LINK: https://powerful-lowlands-88233.herokuapp.com/
 
